@@ -1,0 +1,39 @@
+---
+import Badge from "./Badge.astro"
+---
+<div>
+    <img class="perfil" src="https://i.pinimg.com/originals/e7/1b/f4/e71bf4b2221149c38bad07b2e449260e.jpg" alt="">
+    <h2><span class="saludo">Que tal? Soy Chris!</span> <Badge>Disponible para trabajar</Badge></h2> 
+    <h3>Desarrollador Web de Concepción, Chile 🗿. <span id="color-1">Especializado</span> <span id="color-2">en Python </span>🐍. Con mentalidad proactiva y capacidad para adaptarme a diferentes tecnologías y entornos. Destacando la habilidad para colaborar en equipos, comunicando ideas y comprendiendo las necesidades del equipo de trabajo. Comprometido con la mejora y el aprendizaje continuo, buscando oportunidades para perfeccionar mis habilidades y contribuir al crecimiento del entorno.</h3>
+</div>
+
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    *{
+        font-family:'Raleway', sans-serif;
+        font-weight: bold;
+    }
+    div{
+        margin-bottom: 1rem;
+    }
+    .saludo{
+        font-size: 40px;
+        background: linear-gradient(to right,rgb(17 24 39), rgb(113, 124, 247));
+		-webkit-background-clip: text;
+		color: transparent; 
+    }
+    h3{
+        font-size: 20px;
+    }
+    .perfil{
+		height: 80px;
+        border-radius: 50px;
+	}
+    #color-1{
+        color: rgb(203, 201, 80);
+    }
+    #color-2{
+        color: cornflowerblue;
+    }
+</style>

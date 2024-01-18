@@ -1,0 +1,237 @@
+---
+
+---
+<main>
+	<div class="main-contain">
+		<div class="second-container">
+			<div class="sub-container-1">
+				<div class="sub-subcontainer-1">
+					<a href=""><div class="card" id="card-1"> <h1 id="about-me">About me</h1> </div></a>
+				</div>
+				<div class="sub-subcontainer-2">
+					<a href=""><div class="card" id="card-2"> <h1 class="projects">My Projects</h1> </div></a>
+					<div class="card" id="card-3">
+						<h1 id="nombre">&lt;Chris Aguilera&gt;<span>&#160;</span></h1>
+                        <h1 id="cargo">&lt;Full Stack Developer!&gt;</h1>
+                        <button class="cv">&lt;button&gt; My CV &lt;button&gt;</button>
+					</div>
+				</div>
+			</div>
+			<div class="sub-container-2">
+				<div class="card" id="card-4">
+					<div class="icon-container-1">
+						<img id="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" id="icon">
+						<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="" id="icon">
+						<img src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png" alt="" id="icon">
+						</div>
+						<div class="icon-container-2">
+							<img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="" id="icon">
+							<img src="https://repository-images.githubusercontent.com/596892/cc2c69ec-9251-4b33-8283-b86a8659c9cb" alt="" id="icon">
+							<img src="https://astro.build/assets/press/astro-icon-light-gradient.png" alt="" id="icon">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" alt="" id="icon">
+						</div>
+				</div>
+				<a href=""><div class="card" id="card-5"></div></a>
+			</div>
+		</div>
+		<div class="sub-container-3">
+			<a href=""><div class="card" id="card-6"></div></a>
+			<a href=""><div class="card" id="card-7">
+				<iframe style="border-radius:15px" src="https://open.spotify.com/embed/playlist/1g2hV3l42VxdtF7syjonQD?utm_source=generator&theme=0" width="100%" height="510" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			</div></a>
+		</div>
+	</div>
+</main>
+<style>
+	
+	main{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		animation:scale-up-center 0.4s;
+		margin-bottom: 200px;
+	}
+	@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+
+	.main-contain{
+		display: flex;
+		padding: 10px;
+		background-color: rgba(255, 255, 255,0.5);
+		border-radius: 30px;
+		gap: 10px;
+
+	}
+	.sub-container-1{
+		display: flex;
+		gap: 10px;
+	}
+	.sub-container-1{
+		
+	}
+	.sub-container-2{
+		display: flex;
+		gap: 10px;
+		margin-top: 10px;
+	}
+	.sub-subcontainer-2, .sub-container-3{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.card{
+		background-color: white;
+		width: 250px;
+		height: 100px;
+		border-radius: 30px;
+		transition: all 0.6s ease;
+	}
+	.card:hover{
+    transition: all 0.6s ease;
+    filter: brightness(120%);
+	}
+	#card-2:hover{
+		transition: all 0.6s ease;
+    filter: brightness(105%);
+	}
+	#card-3:hover{
+		transition: all 0.6s ease;
+    filter: brightness(120%);
+	}
+	#card-1, #card-7{
+		height: 510px;
+		width: 250px;
+	}
+	#card-2, #card-3, #card-4{
+		width: 500px;
+		height: 250px;
+	}
+	#card-5, #card-6{
+		height: 250px;
+	}
+	#card-1{
+		background-image: url(https://pbs.twimg.com/media/FtV3qeaaMAI3dUr?format=jpg&name=900x900);
+		background-size: cover;
+		background-position: center;
+		padding-top: 20px;
+	}
+	#card-1:hover{
+		transition: all 0.6s ease;
+		filter: brightness(95%);
+		-webkit-animation: text-shadow-pop-top 0.3s both;
+		animation: text-shadow-pop-top 0.3s both;
+	}
+	#about-me{
+		text-align: center;
+		color: #1a365d;
+		font-family: sans-serif;
+		animation: text-shadow-pop-top 0.3s both;
+		font-size: 30px;
+	}
+	
+
+	#card-2{
+		background-image: url(https://64.media.tumblr.com/37265a10015135eaf5ad1a679627072a/tumblr_pwhahyRaJM1tg1izto1_640.gifv);
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		transition: all 1s ease 0s;
+	}
+	a{
+		text-decoration: none;
+	}
+	.projects{
+		color: white;
+		text-shadow: #000;
+		font-size: 40px;
+		margin-left: 80px;
+	}
+	#card-3{
+		background-color: rgb(23, 30, 85);
+		font-family: 'Source Code Pro', monospace;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.cv{
+		background-color: rgb(29, 37, 99);
+		color: rgb(130, 177, 96);
+		font-size: 30px;
+		font-family: 'Source Code Pro', monospace;
+		cursor: pointer;
+	}
+	#nombre{
+		color: rgb(151, 96, 94);
+		font-size: 30px;
+		font-weight: lighter;
+		position: relative; 
+		float: left;
+		background: rgb(23, 30, 85);
+		margin: 0;
+		
+	}
+	#nombre span {
+		position:absolute;
+		right:0;
+		width:0;
+		background: rgb(23, 30, 85);
+		border-left: 1px solid #000;
+		animation: escribir 3s steps(16) 0s 1;
+	}
+	#cargo{
+		color: rgb(187, 187, 123);
+		font-weight: lighter;
+		font-size: 30px;
+	}
+
+	@keyframes escribir {
+		from { width: 100% }
+		to { width:0 }
+	}
+
+	#card-4{
+		background-image: radial-gradient( #ffffff33 1px, #00091d 1px);
+		gap: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.icon-container-1{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+	}
+	.icon-container-2{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+	}
+	#icon{
+		transition: all .2s ease-in-out;
+		height: 60px;
+	}
+	#icon:hover {
+		transform: scale(1.1) ;
+		transform-origin: center center;
+		cursor: pointer;
+		
+	}
+
+	#card-5{
+		background-color: cornflowerblue;
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png);
+		background-size: cover;
+		background-position: center;
+	}
+	#card-6{
+		background-image: url(https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png);
+		background-size: cover;
+		background-position: center;
+	}
+</style>
