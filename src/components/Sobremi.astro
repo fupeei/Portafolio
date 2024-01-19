@@ -1,11 +1,16 @@
 ---
 import Badge from "./Badge.astro"
+import Boton from "./Boton.astro"
 ---
-<div>
-    <img class="perfil" src="https://i.pinimg.com/originals/e7/1b/f4/e71bf4b2221149c38bad07b2e449260e.jpg" alt="">
-    <h2><span class="saludo">Que tal? Soy Chris!</span> <Badge>Disponible para trabajar</Badge></h2> 
-    <h3>Desarrollador Web de Concepción, Chile 🗿. <span id="color-1">Especializado</span> <span id="color-2">en Python </span>🐍. Con mentalidad proactiva y capacidad para adaptarme a diferentes tecnologías y entornos. Destacando la habilidad para colaborar en equipos, comunicando ideas y comprendiendo las necesidades del equipo de trabajo. Comprometido con la mejora y el aprendizaje continuo, buscando oportunidades para perfeccionar mis habilidades y contribuir al crecimiento del entorno.</h3>
-</div>
+<section id="sobremi">
+    <div>
+        <img class="perfil" src="https://avatars.githubusercontent.com/u/143562487?v=4.png" alt="">
+        <h2><span class="saludo">Que tal? Soy Chris!</span> <Badge>Disponible para trabajar</Badge></h2> 
+        <h3>Desarrollador Web de Concepción, Chile 🗿. <span id="color-1">Especializado</span> <span id="color-2">en Python </span>🐍. Con mentalidad proactiva y capacidad para adaptarme a diferentes tecnologías y entornos. Destacando la habilidad para colaborar en equipos, comunicando ideas y comprendiendo las necesidades del equipo de trabajo. Comprometido con la mejora y el aprendizaje continuo, buscando oportunidades para perfeccionar mis habilidades y contribuir al crecimiento del entorno.</h3>
+        <Boton>Mi Email!</Boton>
+    </div>
+</section>
+
 
 <style>
     
@@ -14,8 +19,19 @@ import Badge from "./Badge.astro"
         font-family:'Raleway', sans-serif;
         font-weight: bold;
     }
+    section{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     div{
-        margin-bottom: 1rem;
+        background-color: rgba(255, 255, 255, 0.4);
+		border-radius: 30px;
+		padding: 3rem;
+        width: 1030px;
+        
     }
     .saludo{
         font-size: 40px;
@@ -25,6 +41,7 @@ import Badge from "./Badge.astro"
     }
     h3{
         font-size: 20px;
+        margin-bottom: 10px;
     }
     .perfil{
 		height: 80px;

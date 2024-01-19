@@ -13,13 +13,12 @@ import Boton from '../components/Boton.astro';
 	<Background></Background>
 	<main>
 		<div class="tittle">
-			<h1>Hey! Bienvenido a mi</h1>
+			<h1 id="saludo">Hey! Bienvenido a mi</h1>
 			<h1> <span class="portfolio">Web Portfolio </span>👋 </h1>
 			<Badge>Disponible para trabajar</Badge>
 		</div>
 		<Bento></Bento>
 		<Sobremi></Sobremi>
-			<Boton>Mi Email!</Boton>
 		<Estudios></Estudios>
 	</main>
 	
@@ -29,9 +28,10 @@ import Boton from '../components/Boton.astro';
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		max-width: calc(100% - 2rem);
 		color: rgb(17 24 39);
 		font-size: 15px;
@@ -64,7 +64,9 @@ import Boton from '../components/Boton.astro';
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin: 0%;
+	}
+	#saludo{
+		margin-top: 4rem;
 	}
 	
 	.text-gradient {
