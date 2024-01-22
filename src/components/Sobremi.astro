@@ -4,8 +4,8 @@ import Boton from "./Boton.astro"
 ---
 <section id="sobremi">
     <div>
-        <img class="perfil" src="https://avatars.githubusercontent.com/u/143562487?v=4.png" alt="">
-        <h2><span class="saludo">Que tal? Soy Chris!</span> <Badge>Disponible para trabajar</Badge></h2> 
+        <img class="perfil" src="https://avatars.githubusercontent.com/u/143562487?v=4.png" alt=""><Badge>Disponible para trabajar</Badge>
+        <h2><span class="saludo">¿Qué tal? ¡Soy Chris!</span></h2> 
         <h3>Desarrollador Web de Concepción, Chile 🗿. <span id="color-1">Especializado</span> <span id="color-2">en Python </span>🐍. Con mentalidad proactiva y capacidad para adaptarme a diferentes tecnologías y entornos. Destacando la habilidad para colaborar en equipos, comunicando ideas y comprendiendo las necesidades del equipo de trabajo. Comprometido con la mejora y el aprendizaje continuo, buscando oportunidades para perfeccionar mis habilidades y contribuir al crecimiento del entorno.</h3>
         <Boton>Mi Email!</Boton>
     </div>
@@ -22,7 +22,6 @@ import Boton from "./Boton.astro"
     section{
         height: 100vh;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -46,11 +45,33 @@ import Boton from "./Boton.astro"
     .perfil{
 		height: 80px;
         border-radius: 50px;
+        margin-bottom: 10px;
 	}
     #color-1{
         color: rgb(203, 201, 80);
     }
     #color-2{
         color: cornflowerblue;
+    }
+    @keyframes show {
+        from {
+            opacity: 0;
+            scale: 25%;
+        }
+
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+    section {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+
+        animation-timeline: --image;
+        animation-name: show;
+
+        animation-range: entry 30% cover 50%;
+        animation-fill-mode: both;
     }
 </style>

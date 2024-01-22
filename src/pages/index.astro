@@ -7,19 +7,19 @@ import Badge from '../components/Badge.astro';
 import Sobremi from '../components/Sobremi.astro';
 import Estudios from '../components/Estudios.astro';
 import Boton from '../components/Boton.astro';
+import Proyectos from '../components/Proyectos.astro';
+import Titulo from '../components/Titulo.astro';
 ---
 
 <Layout title="My Portfolio">
 	<Background></Background>
 	<main>
-		<div class="tittle">
-			<h1 id="saludo">Hey! Bienvenido a mi</h1>
-			<h1> <span class="portfolio">Web Portfolio </span>👋 </h1>
-			<Badge>Disponible para trabajar</Badge>
-		</div>
+		<Titulo></Titulo>
 		<Bento></Bento>
 		<Sobremi></Sobremi>
+		<Proyectos></Proyectos>
 		<Estudios></Estudios>
+		
 	</main>
 	
 
@@ -38,18 +38,7 @@ import Boton from '../components/Boton.astro';
 		line-height: 1.6;
 		font-family: 'Raleway', sans-serif;
 	}
-	.tittle{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 2rem;
-		margin-top: 1rem;
-	}
-	.portfolio{
-		background: linear-gradient(to right,rgb(17 24 39),rgb(17 24 39), rgb(113, 124, 247));
-		-webkit-background-clip: text;
-		color: transparent; 
-	}
+	
 	.astro-a {
 		position: absolute;
 		top: -32px;
@@ -59,15 +48,7 @@ import Boton from '../components/Boton.astro';
 		height: auto;
 		z-index: -1;
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-	}
-	#saludo{
-		margin-top: 4rem;
-	}
+	
 	
 	.text-gradient {
 		background-image: var(--accent-gradient);

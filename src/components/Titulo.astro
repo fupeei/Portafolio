@@ -1,0 +1,65 @@
+---
+import Badge from "./Badge.astro"
+---
+<section>
+    <div class="tittle">
+        <h1 id="saludo">Hey! Bienvenido a mi</h1>
+        <h1> <span class="portfolio">Portfolio Web</span></h1>
+        <div class="shake"><h1>👋</h1></div>
+        <Badge>Disponible para trabajar</Badge>
+    </div>
+</section>
+
+<style>
+    section{
+        margin-top: 4rem;
+    }
+    h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+	}
+    .tittle{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+        color: rgb(17 24 39);
+		font-size: 15px;
+		line-height: 1.6;
+		font-family: 'Raleway', sans-serif;
+	}
+	.portfolio{
+		background: linear-gradient(to right,rgb(17 24 39),rgb(17 24 39), rgb(113, 124, 247));
+		-webkit-background-clip: text;
+		color: transparent; 
+	}
+	.shake{
+		animation: wiggle 2s linear infinite;
+	}
+	@keyframes wiggle {
+		0%, 7% {
+			transform: rotateZ(0);
+		}
+		15% {
+			transform: rotateZ(-15deg);
+		}
+		20% {
+			transform: rotateZ(10deg);
+		}
+		25% {
+			transform: rotateZ(-10deg);
+		}
+		30% {
+			transform: rotateZ(6deg);
+		}
+		35% {
+			transform: rotateZ(-4deg);
+		}
+		40%, 100% {
+			transform: rotateZ(0);
+		}
+	}
+</style>

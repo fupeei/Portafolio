@@ -1,0 +1,120 @@
+<section id="proyectos">
+    <div class="cuadro">
+        <div class="titulo">
+            <h1>Mis Proyectos</h1><span>💻</span>
+        </div>
+        <div class="container">
+            <div class="sub-container">
+                <div class="tarjeta-1"></div>
+                <div class="tarjeta"></div>
+            </div>
+            <div class="sub-container">
+                <div class="tarjeta-1"></div>
+                <div class="tarjeta"></div>
+            </div>
+            <div class="sub-container">
+                <div class="tarjeta-1"></div>
+                <div class="tarjeta"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    section{
+        height: 100vh;
+        padding-top: 5rem;
+    }
+    .cuadro{
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        view-timeline: --div;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+		color: rgb(17 24 39);
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		font-family: 'Raleway', sans-serif;
+        margin-bottom: 4rem;
+    }
+    h1{
+        background: linear-gradient(to right,rgb(17 24 39),rgb(17 24 39), rgb(113, 124, 247));
+		-webkit-background-clip: text;
+		color: transparent; 
+    }
+    .container{
+        display: flex;
+        border-radius: 30px;
+        gap: 10px;
+    }
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 30px;
+    }
+    .tarjeta{
+        height: 150px;
+        width: 340px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        position: relative;
+        display: block;
+        margin-bottom: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    .tarjeta-1{
+        height: 300px;
+        width: 340px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    @keyframes show {
+        from {
+            opacity: 0;
+            scale: 25%;
+        }
+
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+
+    .tarjeta {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+
+        animation-timeline: --image;
+        animation-name: show;
+
+        animation-range: entry 70% cover 40%;
+        animation-fill-mode: both;
+    }
+    .tarjeta-1 {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+
+        animation-timeline: --image;
+        animation-name: show;
+
+        animation-range: entry 70% cover 40%;
+        animation-fill-mode: both;
+    }
+
+
+</style>
