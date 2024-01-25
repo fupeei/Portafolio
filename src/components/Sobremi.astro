@@ -2,12 +2,14 @@
 import Badge from "./Badge.astro"
 import Boton from "./Boton.astro"
 ---
-<section id="sobremi">
-    <div>
-        <img class="perfil" src="https://avatars.githubusercontent.com/u/143562487?v=4.png" alt=""><Badge>Disponible para trabajar</Badge>
-        <h2><span class="saludo">¿Qué tal? ¡Soy Chris!</span></h2> 
-        <h3>Desarrollador Web de Concepción, Chile 🗿. <span id="color-1">Especializado</span> <span id="color-2">en Python </span>🐍. Con mentalidad proactiva y capacidad para adaptarme a diferentes tecnologías y entornos. Destacando la habilidad para colaborar en equipos, comunicando ideas y comprendiendo las necesidades del equipo de trabajo. Comprometido con la mejora y el aprendizaje continuo, buscando oportunidades para perfeccionar mis habilidades y contribuir al crecimiento del entorno.</h3>
-        <Boton>Mi Email!</Boton>
+<section id="seccion-sobremi" >
+    <div id="sobremi">
+        <div class="container">
+            <img class="perfil" src="https://avatars.githubusercontent.com/u/143562487?v=4.png" alt=""><Badge>Disponible para trabajar</Badge>
+            <h2><span class="saludo">¿Qué tal? ¡Soy Chris Aguilera!</span></h2> 
+            <h3>Desarrollador Web de Concepción, Chile 🗿. <span id="color-1">Especializado</span> <span id="color-2">en Python </span>🐍. Con mentalidad proactiva y capacidad para adaptarme a diferentes tecnologías y entornos. Destacando la habilidad para colaborar en equipos, comunicando ideas y comprendiendo las necesidades del equipo de trabajo. Comprometido con la mejora y el aprendizaje continuo, buscando oportunidades para perfeccionar mis habilidades y contribuir al crecimiento del entorno.</h3>
+            <a href="mailto:fupeichris@gmail.com"><Boton>Mi Email!</Boton></a>
+        </div>
     </div>
 </section>
 
@@ -25,7 +27,7 @@ import Boton from "./Boton.astro"
         align-items: center;
         justify-content: center;
     }
-    div{
+    .container{
         background-color: rgba(255, 255, 255, 0.4);
 		border-radius: 30px;
 		padding: 3rem;
@@ -53,23 +55,13 @@ import Boton from "./Boton.astro"
     #color-2{
         color: cornflowerblue;
     }
-    @keyframes show {
-        from {
-            opacity: 0;
-            scale: 25%;
-        }
-
-        to {
-            opacity: 1;
-            scale: 100%;
-        }
-    }
-    section {
+    @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+    #sobremi {
         view-timeline-name: --image;
         view-timeline-axis: block;
 
         animation-timeline: --image;
-        animation-name: show;
+        animation-name: scale-up-center;
 
         animation-range: entry 30% cover 50%;
         animation-fill-mode: both;

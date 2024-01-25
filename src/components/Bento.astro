@@ -1,19 +1,19 @@
----
 
----
 <main>
 	<div class="main-contain">
 		<div class="second-container">
 			<div class="sub-container-1">
 				<div class="sub-subcontainer-1">
-					<div class="card" id="card-1"></div>
+					<a href="#seccion-sobremi"><div class="card" id="card-1">
+						<h1>Sobre mi</h1>
+					</div>
 				</div>
 				<div class="sub-subcontainer-2">
-					<a href="#proyectos"><div class="card" id="card-2"> <h1 class="projects">Mis Proyectos</h1> </div></a>
+					<a href="#seccion-proyectos"><div class="card" id="card-2"> <h1 class="projects">Mis Proyectos</h1> </div></a>
 					<div class="card" id="card-3">
 						<h1 id="nombre">&lt;Chris Aguilera&gt;<span>&#160;</span></h1>
                         <h1 id="cargo">&lt;Full Stack Developer!&gt;</h1>
-                        <button class="cv">&lt;button&gt; My CV &lt;button&gt;</button>
+                        <a href="https://docs.google.com/document/d/1TyNnaU66PmY3cocTLYvNwETxrgRsljdR1uw89dMC9xE/edit?usp=sharing" target="_blank"><button class="cv">&lt;button&gt; Mi CV &lt;button&gt;</button></a>
 					</div>
 				</div>
 			</div>
@@ -32,11 +32,11 @@
 						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" alt="" id="icon">
 					</div>
 				</div>
-				<a href=""><div class="card" id="card-5"></div></a>
+				<a href="https://www.linkedin.com/in/christian-aguilera-2b3b7828b/" target="_blank"><div class="card" id="card-5"></div></a>
 			</div>
 		</div>
 		<div class="sub-container-3">
-			<a href=""><div class="card" id="card-6"></div></a>
+			<a href="https://github.com/fupeei" target="_blank"><div class="card" id="card-6"></div></a>
 			<a href=""><div class="card" id="card-7">
 				<iframe style="border-radius:15px" src="https://open.spotify.com/embed/playlist/1g2hV3l42VxdtF7syjonQD?utm_source=generator&theme=0" width="100%" height="510" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 			</div></a>
@@ -44,7 +44,7 @@
 	</div>
 </main>
 <style>
-	
+	@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 	main{
 		display: flex;
 		align-items: center;
@@ -53,7 +53,6 @@
 		
 	}
 	@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
-
 	.main-contain{
 		display: flex;
 		padding: 10px;
@@ -88,7 +87,7 @@
 	}
 	.card:hover{
     transition: all 0.6s ease;
-    filter: brightness(120%);
+    filter: brightness(110%);
 	}
 	#card-2:hover{
 		transition: all 0.6s ease;
@@ -110,10 +109,17 @@
 		height: 250px;
 	}
 	#card-1{
-		background-image: url(https://pbs.twimg.com/media/FtV3qeaaMAI3dUr?format=jpg&name=900x900);
+		background-image: url(https://media.tenor.com/psQzFHIko4MAAAAd/study-anime.gif);
 		background-size: cover;
 		background-position: center;
-		padding-top: 20px;
+		display: flex;
+		align-items: end;
+		padding-left: 10px;
+		padding-bottom: 30px;
+		color: white;
+		font-size: 50px;
+		font-family: 'Nanum Pen Script', cursive;
+		
 	}
 	#card-1:hover{
 		transition: all 0.6s ease;
@@ -146,6 +152,7 @@
 		text-shadow: #000;
 		font-size: 40px;
 		margin-left: 80px;
+		font-weight: bold;
 	}
 	#card-3{
 		background-color: rgb(23, 30, 85);
@@ -234,4 +241,5 @@
 		background-size: cover;
 		background-position: center;
 	}
+	
 </style>
